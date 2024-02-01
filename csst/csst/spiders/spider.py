@@ -7,12 +7,12 @@ class MySpider(scrapy.Spider):
     start_urls = ['http://journal26.magtechjournal.com/kjkxjs/CN/article/showOldVolumnSimple.do']
 
     def parse(self, response):
-        for link in response.css('a::attr(href)').extract()[0:2]:
+        for link in response.css('a::attr(href)').extract():
             next_url = f'http://journal26.magtechjournal.com/kjkxjs/CN{link.replace("..", "")}'
             yield scrapy.Request(next_url, callback=self.parse_issue_page)
 
     def parse_issue_page(self, response):
-        for article_url in response.css('a.txt_biaoti::attr(href)').extract()[0:6]:
+        for article_url in response.css('a.txt_biaoti::attr(href)').extract()[0:1]:
             yield scrapy.Request(article_url, callback=self.parse_article)
 
     def parse_article(self, response):
@@ -31,33 +31,42 @@ class MySpider(scrapy.Spider):
         item['issue_number'] = response.css('div.col-md-12 p span a:contains("Issue")::text').extract_first().\
         split("(")[1].\
         replace(")", "")
-        
-        item['year_number'] = response.css('ul.list-unstyled.code-style li span:contains("出版日期:")::text').extract_first().\
-        replace("出版日期:", "").\
-        strip().\
-        split("-")[0]
+
+        published_date = None
+
+        for span in response.css('ul.list-unstyled.code-style li span').getall():
+
+            if "出版日期:" in span:
+
+                published_date = span.split(":</code>")[1].split("<")[0].strip()
+
+
+        item['year_number'] = published_date.split("-")[0]
+
+        item['publish_date'] = datetime.strptime(published_date, '%Y-%m-%d').date()
         
         item['title'] = response.css('h3.abs-tit::text').extract_first()
         
-        item['article_number'] = response.css('div.col-md-12 p span::text').extract_first().\
+        item['article_number'] = response.css('div.col-md-12 p span::text').getall()[3].\
         split(":")[-1].\
         replace(".", "").\
         strip()
         
-        item['publish_date'] = self.extract_publish_date(response)
+        authors_list = []
+
+        for author in response.css('p[data-toggle="collapse"] span::text').getall():
+            auth = author.replace("\r\n", "").replace("\t", "").replace("，", "").strip()
+            if len(auth)>0:                                
+                authors_list.append(auth)
+
+        item['authors'] = ", ".join(authors_list)
+
+        abstracts = []
         
-        item['authors'] = response.css('p.collapsed span::text').extract_first()
-        
-        item['abstract'] = response.css('div.panel-body.line-height.text-justify p::text').extract_first() + "\n\n" + response.css('div.panel-body.line-height.text-justify form[name="refForm"]::text').extract_first() 
+        for abs in response.css('div.panel-body.line-height.text-justify p::text').getall(): 
+            if  "\r" not in abs and "\n" not in abs and "\t" not in abs:
+                abstracts.append(abs)
+
+        item['abstract'] = abstracts[0] + "\n\n" + abstracts[1] 
 
         yield item
-
-    def extract_publish_date(self, response):
-        date_str = response.css('ul.list-unstyled.code-style li span:contains("出版日期:") + span::text').extract_first().\
-        replace("出版日期:", "").\
-        strip()
-
-        try:
-            return datetime.strptime(date_str, '%Y-%m-%d').date()
-        except (ValueError, TypeError):
-            return date_str
