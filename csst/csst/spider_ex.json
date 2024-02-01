@@ -1,0 +1,1116 @@
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 35, in parse_article
+    item['issue_number'] = response.css('div.col-md-12 p span a:contains("Issue")::text').extract_first().\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 74, in parse_article
+    item['abstract'] = abstracts[0] + "\n\n" + abstracts[1]
+IndexError: list index out of range
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 28, in parse_article
+    item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 74, in parse_article
+    item['abstract'] = abstracts[0] + "\n\n" + abstracts[1]
+IndexError: list index out of range
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 74, in parse_article
+    item['abstract'] = abstracts[0] + "\n\n" + abstracts[1]
+IndexError: list index out of range
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 35, in parse_article
+    item['issue_number'] = response.css('div.col-md-12 p span a:contains("Issue")::text').extract_first().\
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
+Traceback (most recent call last):
+  File "C:\Users\nehue\Documents\programas_de_python\Upwork_tasks\Scrapy_spiders\csst\csst\spiders\spider.py", line 48, in parse_article
+    item['year_number'] = published_date.split("-")[0]
+AttributeError: 'NoneType' object has no attribute 'split'
+
+ ***********************
