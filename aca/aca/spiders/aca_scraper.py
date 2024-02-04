@@ -1,3 +1,4 @@
+from inspect import trace
 import scrapy
 from datetime import datetime
 from aca.items import MySpiderItem 
@@ -24,7 +25,7 @@ class CsstSpider(scrapy.Spider):
             yield scrapy.Request(next_url, callback=self.parse_issue_page, cb_kwargs=issue_number)
 
     def parse_issue_page(self, response, issue_number):
-        for article_url in response.css('a.biaoti::attr(href)').extract()[0:1]:
+        for article_url in response.css('a.biaoti::attr(href)').extract():
             issue_number = {"issue_number":issue_number}
             yield scrapy.Request(article_url, callback=self.parse_article, cb_kwargs=issue_number)
 
@@ -50,22 +51,59 @@ class CsstSpider(scrapy.Spider):
 
                     return published_date
 
-        def parse_authors(tag) -> str:
+        def parse_authors(title_tag, abs_tag) -> str:
 
-            auth_ch, auth_en = tag.css("p::text").getall()[0], tag.css("p::text").getall()[2]
+            authors_list = []
 
-            return " - ".join((auth_ch, auth_en))
+            for author in title_tag:
+
+                auth = author.replace("\r\n", "").replace("\t", "").replace("，", "").replace(", ", "").strip()
+                
+                if len(auth)>0:                                
+                
+                    authors_list.append(auth)
+
+            if len(authors_list) > 0:
+
+                return ", ".join(authors_list)
+
+            else:
+
+                try:
+
+                    auth_ch, auth_en = abs_tag.css("p::text").getall()[0], abs_tag.css("p::text").getall()[2]
+
+                    return " - ".join((auth_ch, auth_en))
+
+                except IndexError:
+
+                    auths = []
+
+                    for element in abs_tag.css("p::text").getall():
+
+                        if "," in element and "." in element:
+
+                            auth = element.split(".")[0]
+
+                            auths.append(auth)
+
+                    return " - ".join(auths)
 
         def parse_abstract(tag) -> str:
 
-            abstracts = []
-            
-            for abs in tag: 
-                if  "\r" not in abs and "\n" not in abs and "\t" not in abs:
-                    abstracts.append(abs)
+            try:
 
-            return abstracts[0] + "\n\n" + abstracts[1]
+                abstracts = []
+                
+                for abs in tag: 
+                    if  "\r" not in abs and "\n" not in abs and "\t" not in abs:
+                        abstracts.append(abs)
 
+                return abstracts[0] + "\n\n" + abstracts[1]
+
+            except Exception:
+
+                return response.css("div.primary-border p::text").get()
 
         item = MySpiderItem()
 
@@ -73,7 +111,7 @@ class CsstSpider(scrapy.Spider):
         
         try:
 
-            item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+            item['pdf_to_download'] = "http://journal01.magtech.org.cn/Jwk3_kjkzjs/CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
             extract_first().\
             split(",")[1].\
             replace("'", "")
@@ -110,10 +148,12 @@ class CsstSpider(scrapy.Spider):
                 f.write(f"Problem with: {response.url} => {trcb}\n ***********************\n")
 
             item['article_number'] = None
-            
-        authors_tag = response.css('div.primary-border')[0]
 
-        item['authors'] = parse_authors(authors_tag)
+        title_auth = response.css('p[data-toggle="collapse"] span::text').getall()
+            
+        abs_auth = response.css('div.primary-border')[0]
+
+        item['authors'] = parse_authors(title_auth, abs_auth)
 
         abstract_tag = response.css('div.panel-body.line-height.text-justify p::text').getall()
 
