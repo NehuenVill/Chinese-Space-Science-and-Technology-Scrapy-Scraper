@@ -10,11 +10,11 @@ class AmtSpider(scrapy.Spider):
     name = 'amt_spider'
     start_urls = ['https://www.yhclgy.com/yhclgy/issue/get_year_info?_=1707420395312']
 
-    def parse_(self, response):
+    def parse(self, response):
         
         all_years = response.text.split("#")
 
-        years = {"years": years}
+        years = {"years": all_years}
 
         yield scrapy.Request("https://www.yhclgy.com/yhclgy/issue/get_all_issue_info?_=1707420395314", callback=self.parse_issue_page, cb_kwargs=years)
 
@@ -28,13 +28,36 @@ class AmtSpider(scrapy.Spider):
 
             base_url = "https://www.yhclgy.com/yhclgy/article/issue/"
 
-            y,v = year.split(",")
+            try:
 
-            for i in issues[year].split(":"):
+                y,v = year.split(",")
+
+            except Exception:
+
+                y = year.replace(",", "")
+
+                v = None
+
+            try:
+
+
+                iss = issues[y].split(":")
+
+            except Exception:
+
+                continue
+
+            for i in iss:
 
                 issue = i.split(",")[0]
 
-                url = f"{base_url}{y}_{v}_issue"
+                if v:
+
+                    url = f"{base_url}{y}_{v}_{issue}"
+
+                else:
+
+                    url = f"{base_url}{y}_{issue}"
 
                 issue_number = {"issue_number":issue}
 
@@ -134,52 +157,34 @@ class AmtSpider(scrapy.Spider):
         
         try:
 
-            item['pdf_to_download'] = "http://journal01.magtech.org.cn/Jwk3_kjkzjs/CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
-            extract_first().\
-            split(",")[1].\
-            replace("'", "")
+            item['pdf_to_download'] = response.css("a#PdfUrl").attrib["href"]
 
         except Exception:
 
-            item['pdf_to_download'] = response.css("meta[name='citation_pdf_url']::attr('content')").get()
+            item['pdf_to_download'] = None
             
         item['original_link'] = response.url
         
         item['issue_number'] = issue_number
 
-        dates = response.css('ul.list-unstyled.code-style li span').getall()
+        date = response.css("span#PublishTimeValue::text").get()
 
-        item['year_number'] = parse_date(dates).split("-")[0]
+        item['year_number'] = date.split("-")[0]
 
-        item['publish_date'] = datetime.strptime(parse_date(dates), '%Y-%m-%d').date()
+        item['publish_date'] = datetime.strptime(date, '%Y-%m-%d').date()
 
-        item['title'] = response.css('h3.abs-tit::text').extract_first()
+        item['title'] = response.css("div.zh div.title::text").get() + " - " + response.css("div.en div.title::text").get()
         
         try:
 
-            item['article_number'] = response.css('div.col-md-12 p span::text').getall()[3].\
-            split(":")[-1].\
-            replace(".", "").\
-            strip()
+            item['article_number'] = response.css("span#all_issue_position::text").getall()[1].split(".")[0].replace(">", "").strip()
 
         except Exception as e:
 
-            trcb = traceback.format_exc()
-
-            with open("spider_ex.json", "a") as f:
-
-                f.write(f"Problem with: {response.url} => {trcb}\n ***********************\n")
-
             item['article_number'] = None
 
-        title_auth = response.css('p[data-toggle="collapse"] span::text').getall()
-            
-        abs_auth = response.css('div.primary-border')[0]
+        item['authors'] = None #in the search of another way of scraping them since they are dynamically loaded.
 
-        item['authors'] = parse_authors(title_auth, abs_auth)
-
-        abstract_tag = response.css('div.panel-body.line-height.text-justify p::text').getall()
-
-        item['abstract'] = parse_abstract(abstract_tag)
+        item['abstract'] = response.css("p#CnAbstractValue::text").get() + " \n " + response.css("p#EnAbstractValue::text").get()
 
         yield item
