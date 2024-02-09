@@ -76,7 +76,7 @@ class CsstSpider(scrapy.Spider):
         
         try:
 
-            item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs//CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
+            item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs/CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
             extract_first().\
             split(",")[1].\
             replace("'", "")
