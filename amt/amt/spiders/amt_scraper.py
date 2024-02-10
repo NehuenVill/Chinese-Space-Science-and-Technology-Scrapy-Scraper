@@ -3,7 +3,7 @@ import scrapy
 from datetime import datetime
 from amt.items import article_item
 import traceback
-from logging import warn
+from logging import warning
 
 
 class AmtSpider(scrapy.Spider):
@@ -40,10 +40,9 @@ class AmtSpider(scrapy.Spider):
 
             try:
 
-
                 iss = issues[y].split(":")
 
-            except Exception:
+            except Exception as e:
 
                 continue
 
@@ -74,117 +73,84 @@ class AmtSpider(scrapy.Spider):
 
             yield scrapy.Request(article_url, callback=self.parse_article, cb_kwargs=issue_number)
 
-
     def parse_article(self, response, issue_number):
 
-        def parse_date(spans) -> str:
+        try:
 
-            published_date = None
+            item = article_item()
 
-            for span in spans:
-
-                if "出版日期:" in span:
-
-                    published_date = span.split(":</code>")[1].split("<")[0].strip()
-
-                    return published_date
-
-            for span in spans:
-
-                if "发布日期:" in span:
-
-                    published_date = span.split(":</code>")[1].split("<")[0].strip()
-
-                    return published_date
-
-        def parse_authors(title_tag, abs_tag) -> str:
-
-            authors_list = []
-
-            for author in title_tag:
-
-                auth = author.replace("\r\n", "").replace("\t", "").replace("，", "").replace(", ", "").strip()
-                
-                if len(auth)>0:                                
-                
-                    authors_list.append(auth)
-
-            if len(authors_list) > 0:
-
-                return ", ".join(authors_list)
-
-            else:
-
-                try:
-
-                    auth_ch, auth_en = abs_tag.css("p::text").getall()[0], abs_tag.css("p::text").getall()[2]
-
-                    return " - ".join((auth_ch, auth_en))
-
-                except IndexError:
-
-                    auths = []
-
-                    for element in abs_tag.css("p::text").getall():
-
-                        if "," in element and "." in element:
-
-                            auth = element.split(".")[0]
-
-                            auths.append(auth)
-
-                    return " - ".join(auths)
-
-        def parse_abstract(tag) -> str:
-
+            item['html_to_ingest'] = response.body.decode('utf-8')
+            
             try:
 
-                abstracts = []
-                
-                for abs in tag: 
-                    if  "\r" not in abs and "\n" not in abs and "\t" not in abs:
-                        abstracts.append(abs)
-
-                return abstracts[0] + "\n\n" + abstracts[1]
+                item['pdf_to_download'] = response.css("a#PdfUrl").attrib["href"]
 
             except Exception:
 
-                return response.css("div.primary-border p::text").get()
-
-        item = article_item()
-
-        item['html_to_ingest'] = response.body.decode('utf-8')
-        
-        try:
-
-            item['pdf_to_download'] = response.css("a#PdfUrl").attrib["href"]
-
-        except Exception:
-
-            item['pdf_to_download'] = None
+                item['pdf_to_download'] = None
+                
+            item['original_link'] = response.url
             
-        item['original_link'] = response.url
+            item['issue_number'] = issue_number
+
+            date = response.css("span#PublishTimeValue::text").get()
+
+            item['year_number'] = date.split("-")[0]
+
+            item['publish_date'] = datetime.strptime(date, '%Y-%m-%d').date()
+
+            t_en = response.css("div.en div.title::text").get()
+
+            t_ch = response.css("div.zh div.title::text").get()
+
+            if t_ch and t_en:
+
+                item['title'] = t_ch + " \n " + t_en
+
+            elif t_ch:
+
+                item['title'] = t_ch
+
+            elif t_en:
+
+                item['title'] = t_en
+
+            else:
+
+                item['title'] = None
+            
+            try:
+
+                item['article_number'] = response.css("span#all_issue_position::text").getall()[1].split(".")[0].replace(">", "").strip()
+
+            except Exception as e:
+
+                item['article_number'] = None
+
+            item['authors'] = None #in the search of another way of scraping them since they are dynamically loaded.
+
+            abs_ch = response.css("p#CnAbstractValue::text").get()
+
+            abs_en =  response.css("p#EnAbstractValue::text").get()
+
+            if abs_ch and abs_en:
+
+                item['abstract'] = abs_ch + " \n " + abs_en
+
+            elif abs_ch:
+
+                item['abstract'] = abs_ch
+
+            elif abs_en:
+
+                item['abstract'] = abs_en
+
+            else:
+
+                item['abstract'] = None
+
+            yield item
         
-        item['issue_number'] = issue_number
-
-        date = response.css("span#PublishTimeValue::text").get()
-
-        item['year_number'] = date.split("-")[0]
-
-        item['publish_date'] = datetime.strptime(date, '%Y-%m-%d').date()
-
-        item['title'] = response.css("div.zh div.title::text").get() + " - " + response.css("div.en div.title::text").get()
-        
-        try:
-
-            item['article_number'] = response.css("span#all_issue_position::text").getall()[1].split(".")[0].replace(">", "").strip()
-
         except Exception as e:
 
-            item['article_number'] = None
-
-        item['authors'] = None #in the search of another way of scraping them since they are dynamically loaded.
-
-        item['abstract'] = response.css("p#CnAbstractValue::text").get() + " \n " + response.css("p#EnAbstractValue::text").get()
-
-        yield item
+            warning(f"There's been a problem scraping the article: {response.url}, exception: {e}")
