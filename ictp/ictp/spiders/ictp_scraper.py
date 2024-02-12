@@ -26,7 +26,7 @@ class IctpSpider(scrapy.Spider):
 
     def parse_issue_page(self, response, issue_number):
 
-        for article_url in response.css("li.biaoti a::attr('href')").getall()[0:1]:
+        for article_url in response.css("li.biaoti a::attr('href')").getall():
 
             if ".." in article_url:
                 continue
