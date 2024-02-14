@@ -18,3 +18,4 @@ class article_item(scrapy.Item):
     publish_date = scrapy.Field()
     authors = scrapy.Field()
     abstract = scrapy.Field()
+

@@ -125,7 +125,7 @@ class JnauSpider(scrapy.Spider):
 
                 item['article_number'] = None
 
-            item['authors'] = None #in the search of another way of scraping them since they are dynamically loaded.
+            item['authors'] = " - ".join(response.css("meta[name='citation_authors']::attr(content)").getall())
 
             abs_ch = response.css("p#CnAbstractValue::text").get()
 
