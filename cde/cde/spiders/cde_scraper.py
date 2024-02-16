@@ -21,7 +21,7 @@ class JnauSpider(scrapy.Spider):
             yield scrapy.Request(next_url, callback=self.parse_issue_page, cb_kwargs=issue_number)
 
     def parse_issue_page(self, response, issue_number):
-        for article_url in response.css('a[href*="abstract/abstract"]::attr(href)').getall()[1:2]:
+        for article_url in response.css('a[href*="abstract/abstract"]::attr(href)').getall():
             url = f'http://jsj.journal.cssc709.net/CN{article_url.replace("..","")}'
             issue_number = {"issue_number":issue_number}
 
@@ -35,7 +35,7 @@ class JnauSpider(scrapy.Spider):
 
             for text in tag:
 
-                if "-" in tag:
+                if "-" in text:
 
                     date = text.split("\r")[0].strip()
 
