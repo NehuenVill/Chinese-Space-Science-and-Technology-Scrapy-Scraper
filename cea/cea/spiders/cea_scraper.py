@@ -5,18 +5,24 @@ from logging import warning
 import traceback
 
 
-class CsstSpider(scrapy.Spider):
+class CeaSpider(scrapy.Spider):
     name = 'cea_spider'
     start_urls = ['http://cea.ceaj.org/CN/article/showOldVolumn.do']
 
     def parse(self, response):
-        for a in response.css('a.J_WenZhang'):
-            next_url = f'http://cea.ceaj.org/CN{a.attrib["href"].replace("..", "")}'
-            i_n = a.css("::text").get().split(".")[1].replace("0", "")
+        for a in response.css("table.table.table-striped.table-hover.table-bordered.text-center").css('a.J_WenZhang'):
 
-            issue_number = {"issue_number":i_n}
+            try:
 
-            yield scrapy.Request(next_url, callback=self.parse_issue_page, cb_kwargs=issue_number)
+                i_n = a.css("::text").get().split(".")[1].replace("0", "")
+                next_url = f'http://cea.ceaj.org/CN{a.attrib["href"].replace("..", "")}'
+                issue_number = {"issue_number":i_n}
+    
+                yield scrapy.Request(next_url, callback=self.parse_issue_page, cb_kwargs=issue_number)
+
+            except Exception:
+
+                continue
 
     def parse_issue_page(self, response, issue_number):
         for article_url in response.css('a.biaoti::attr(href)').extract():
@@ -91,7 +97,17 @@ class CsstSpider(scrapy.Spider):
                 if  "\r" not in abs and "\n" not in abs and "\t" not in abs:
                     abstracts.append(abs)
 
-            return abstracts[0] + "\n\n" + abstracts[1]
+            if len(abstracts) > 1:
+
+                return abstracts[0] + "\n\n" + abstracts[1]
+
+            elif len(abstracts) == 1:
+
+                return abstracts[0]
+
+            else:
+
+                return None
 
         try:
 
@@ -99,16 +115,7 @@ class CsstSpider(scrapy.Spider):
 
             item['html_to_ingest'] = response.body.decode('utf-8')
             
-            try:
-
-                item['pdf_to_download'] = "http://journal26.magtechjournal.com/kjkxjs/CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
-                extract_first().\
-                split(",")[1].\
-                replace("'", "")
-
-            except Exception:
-
-                item['pdf_to_download'] = response.css("meta[name='citation_pdf_url']::attr('content')").get()
+            item['pdf_to_download'] = response.css("meta[name='citation_pdf_url']::attr('content')").get()
                 
             item['original_link'] = response.url
             
@@ -145,6 +152,6 @@ class CsstSpider(scrapy.Spider):
 
             yield item
 
-        except Exception:
+        except Exception as e:
 
             warning(f"There's been a problem scraping the article: {response.url}, exception: {e}")
