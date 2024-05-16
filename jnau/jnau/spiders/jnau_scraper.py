@@ -152,3 +152,4 @@ class JnauSpider(scrapy.Spider):
         except Exception as e:
 
             warning(f"There's been a problem scraping the article: {response.url}, exception: {e}")
+

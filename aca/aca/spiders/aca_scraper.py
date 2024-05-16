@@ -1,7 +1,6 @@
 import scrapy
 from datetime import datetime
 from aca.items import article_item 
-import traceback
 
 class CsstSpider(scrapy.Spider):
     name = 'aca_spider'
@@ -64,7 +63,7 @@ class CsstSpider(scrapy.Spider):
             except Exception:
                 return response.css("div.primary-border p::text").get()
         item = article_item()
-        item['journal_name'] = "Aerospace_Control_and_Application "
+        item['journal_name'] = "Aerospace_Control_and_Application"
         item['html_to_ingest'] = response.body.decode('utf-8')
         try:
             item['pdf_to_download'] = "http://journal01.magtech.org.cn/Jwk3_kjkzjs/CN/article/downloadArticleFile.do?attachType=PDF&id=" + response.css('a.black-bg.btn-menu::attr("onclick")').\
@@ -79,7 +78,6 @@ class CsstSpider(scrapy.Spider):
         item['year_number'] = parse_date(dates).split("-")[0]
         item['publish_date'] = datetime.strptime(parse_date(dates), '%Y-%m-%d').date()
         item['title'] = response.css('h3.abs-tit::text').extract_first()
-        item['article_number'] = response.meta["article_number"]
         title_auth = response.css('p[data-toggle="collapse"] span::text').getall()
         abs_auth = response.css('div.primary-border')[0]
         item['authors'] = parse_authors(title_auth, abs_auth)

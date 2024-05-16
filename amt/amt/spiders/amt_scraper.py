@@ -1,8 +1,6 @@
-from inspect import trace
 import scrapy
 from datetime import datetime
 from amt.items import article_item
-import traceback
 from logging import warning
 
 
@@ -127,7 +125,7 @@ class AmtSpider(scrapy.Spider):
 
                 item['article_number'] = None
 
-            item['authors'] = None #in the search of another way of scraping them since they are dynamically loaded.
+            item['authors'] = " - ".join(response.css("meta[name='citation_authors']::attr(content)").getall())
 
             abs_ch = response.css("p#CnAbstractValue::text").get()
 

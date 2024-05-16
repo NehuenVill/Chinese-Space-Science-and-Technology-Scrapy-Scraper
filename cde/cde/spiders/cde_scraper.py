@@ -4,7 +4,7 @@ from cde.items import article_item
 from logging import warning
 
 
-class JnauSpider(scrapy.Spider):
+class CdeSpider(scrapy.Spider):
     name = 'cde_spider'
     start_urls = ['http://jsj.journal.cssc709.net/CN/article/showOldVolumn.do']
 
